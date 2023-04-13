@@ -40,8 +40,10 @@ x_test=scaler.fit_transform(x_test)
 
 # 逻辑回归模型
 model = LogisticRegression()
-model.fit(x_train, y_train)  # 训练数据,学习模型参数
-y_predict = model.predict(x_test)  # 预测
+# 训练数据,学习模型参数
+model.fit(x_train, y_train) 
+# 预测
+y_predict = model.predict(x_test)  
 
 
 accuracy_score(y_test,y_predict)
